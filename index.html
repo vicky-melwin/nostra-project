@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <!-- Google Font Link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <!-- TailwindCSS Link  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Responsive Navbar  -->
+    <nav class="p-5 flex items-center justify-between">
+        <h1 class="text-4xl font-bold cursor-default">Nostra</h1>
+
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="menubar size-6 w-7 md:hidden" cursor: pointer; id="menubar">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                id="menubar" />
+        </svg>
+
+        <ul class="gap-16 mr-8 md:flex md:gap-10 cursor-pointer hidden" id="menuitems">
+
+            <a href="index.html" class="hover:underline">Home</a>
+            <a href="index.html" class="hover:underline">New Arrival</a>
+            <a href="index.html" class="hover:underline">Most Wanted</a>
+            <a href="index.html" class="hover:underline">Collections</a>
+            <a href="contact.html" class="hover:underline">Contact Us</a>
+        </ul>
+    </nav>
+
+    <!-- Popup  -->
+    <div class="hidden md:hidden" id="popup">
+        <p class="exit text-2xl mt-3 cursor-default" id="exits">X</p>
+        <ul class="gap-16 mr-8 sm:block md:block md:gap-10 cursor-default" id="links">
+            <a href="index.html" style="font-size: 20px; margin-left: -50%;"><b>Home</b></a> <br>
+            <a href="index.html" style="font-size: 20px; margin-left: -50%;"><b>New Arrival</b></a> <br>
+            <a href="index.html" style="font-size: 20px; margin-left: -50%"><b>Most Wanted</b></a> <br>
+            <a href="index.html" style="font-size: 20px; margin-left: -50%"><b>Collections</b></a> <br>
+            <a href="contact.html" style="font-size: 20px; margin-left: -50%"><b>Contact Us</b></a> <br>
+        </ul>
+    </div>
+
+    <!-- Slider images  -->
+    <div class="container__1 cursor-default">
+        <div class="container__1__items flex">
+            <img src="./images/slider-one.jpg" alt="Not found" class="p-4 relative">
+            <h1 class="absolute text-8xl font-bold font-bold text-white flex justify-center hidden md:flex">Level up your style with our</h1>
+            <p class="absolute text-2xl font-bold text-white hidden md:flex">Summer Collections</p>
+            <button class="absolute border bg-white rounded-2xl hidden md:flex">Shop Now</button>
+        </div>
+    </div>
+
+    <!-- Brands -->
+    <div class="container__2 cursor-default">
+        <h1 class="text-4xl font-bold p-5">Brands</h1>
+        <div class="container__2__images flex justify-around items-center md:gap-20">
+            <div>
+                <img src="./images/logo1.png" alt="Not found" class="w-20">
+                <p class="text-2xl">Behance</p>
+            </div>
+            <div>
+                <img src="./images/logo2.png" alt="Not found" class="w-20">
+                <p class="text-2xl">Adidas</p>
+            </div>
+            <div>
+                <img src="./images/logo3.png" alt="Not found" class="w-20">
+                <p class="text-2xl">Simple</p>
+            </div>
+            <div>
+                <img src="./images/logo4.png" alt="Not found" class="w-20">
+                <p class="text-2xl">Leaves</p>
+            </div>
+            <div>
+                <img src="./images/logo5.png" alt="Not found" class="w-20">
+                <p class="text-2xl">Twitch</p>
+            </div>
+            <div>
+                <img src="./images/logo1.png" alt="Not found" class="w-20">
+                <p class="text-2xl">Behance</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Customer Experience -->
+    <div class="container__3__header text-5xl font-bold p-5 mt-10 sm:text-4xl cursor-default">
+        <h1>We Provide Best Customer Experiences</h1>
+    </div>
+    <div class="container__3 flex justify-around cursor-default">
+
+        <div class="container__3__1 bg-gray-200 p-2 mt-5">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6 w-16">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            </svg>
+            <p class="font-bold">Original Products</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, quas.
+            </p>
+        </div>
+        <div class="container__3__1 bg-gray-200 p-2 mt-5">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6 w-16">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
+            </svg>
+            <p class="font-bold">Satisfaction Guarantee</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, repudiandae.
+            </p>
+        </div>
+        <div class="container__3__1 bg-gray-200 p-2 mt-5">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6 w-16">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42" />
+            </svg>
+            <p class="font-bold">New Arrival Everyday</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, nulla!
+            </p>
+        </div>
+        <div class="container__3__1 bg-gray-200 p-2 mt-5">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6 w-16">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
+            </svg>
+            <p class="font-bold">Fast & Free Shipping</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, error.
+            </p>
+        </div>
+    </div>
+
+    <!-- New Arrivals  -->
+    <h1 class="text-4xl font-bold p-5 mt-10 cursor-default">New Arrival</h1>
+    <div class="container__4 p-5 cursor-pointer">
+        <div class="container__4__images flex">
+            <div class="container__4__items relative">
+                <img src="./images/dress1.jpg" alt="Not found" class="opacity-70">
+                <button class="bg-white rounded-2xl absolute border border-black sm:text-2xl">Shop Now</button>
+            </div>
+            <div class="container__4__items relative">
+                <img src="./images/dress2.jpg" alt="Not found" class="opacity-70">
+                <button class="bg-white rounded-2xl absolute border border-black sm:text-2xl">Shop Now</button>
+            </div>
+            <div class="container__4__items relative">
+                <img src="./images/dress3.jpg" alt="Not found" class="opacity-70">
+                <button class="bg-white rounded-2xl absolute border border-black sm:text-2xl">Shop Now</button>
+            </div>
+            <div class="container__4__items relative">
+                <img src="./images/dress4.jpg" alt="Not found" class="opacity-70">
+                <button class="bg-white rounded-2xl absolute border border-black sm:text-2xl">Shop Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Most Wanted  -->
+    <h1 class="text-4xl font-bold p-5 mt-10 cursor-default">Most Wanted</h1>
+    <div class="container__4 p-5 cursor-pointer">
+        <div class="container__4__images flex">
+            <div class="container__4__items relative">
+                <img src="./images/dress1.jpg" alt="Not found">
+                <p class="absolute bg-red-600 text-white top-2 rounded-2xl">Sale</p>
+            </div>
+            <div class="container__4__items relative">
+                <img src="./images/dress2.jpg" alt="Not found">
+                <p class="absolute bg-red-600 text-white top-2 rounded-2xl">Sale</p>
+            </div>
+            <div class="container__4__items relative">
+                <img src="./images/dress3.jpg" alt="Not found">
+                <p class="absolute bg-red-600 text-white top-2 rounded-2xl">Sale</p>
+            </div>
+            <div class="container__4__items relative">
+                <img src="./images/dress4.jpg" alt="Not found">
+                <p class="absolute bg-red-600 text-white top-2 rounded-2xl">Sale</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Offer  -->
+    <div class=" container__5 bg-gray-800 mt-5 flex items-center">
+        <img src="./images/offer.jpg" alt="Not found" class="p-10">
+        <div class="container__5__offer m-5">
+            <h1 class="text-6xl text-white font-bold mb-5 cursor-default">Limited Offer</h1>
+            <h1 class="text-4xl text-white font-bold cursor-default">35% OFF on this for the first 30 Customers</h1>
+            <button class="border rounded-2xl bg-white text-black p-3 ml-2 mr-2 text-2xl flex gap-2 mt-7">Shop Now <svg
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6 w-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Subscribe  -->
+    <div class="container__6 text-center cursor-default">
+        <h1 class="text-7xl font-bold mt-20">Join our News Letter</h1>
+        <h1 class="text-3xl mt-5">Signup for our email newspaper to get exclusive discounts, updates, and more</h1>
+        <input type="text" class="p-3 mt-5"> <br>
+        <button class="border rounded-2xl bg-gray-800 text-white p-3 ml-2 mr-2 text-2xl flex gap-2 mt-7">Subscribe<svg
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6 w-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+            </svg>
+        </button>
+    </div>
+
+    <!-- Footer  -->
+    <div class="container__7 bg-gray-800 mt-20 flex flex-wrap cursor-default">
+        <h1 class="text-6xl text-white font-bold p-10">Nostra</h1>
+        <h1 class="text-4xl pt-3 pl-10 text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus,
+            atque? Tempora maxime eius inventore ipsam.
+            <div class="container__7__images gap-10 mt-10">
+                <img src="./images/instagram.png" alt="Not found" class="w-10 inline ml-20">
+                <img src="./images/twitter.png" alt="Not found" class="w-10 inline ml-20">
+                <img src="./images/facebook.png" alt="Not found" class="w-10 inline ml-20">
+            </div>
+            <h1 class="text-4xl text-white ml-10 mt-10">@2023 Nostra.com</h1>
+
+    </div>
+
+    <!-- JAVASCRIPT  -->
+    <script>
+        var menubar = document.getElementById("menubar")
+        var menuitems = document.getElementById("menuitems")
+        var popup = document.getElementById("popup")
+        var exits = document.getElementById("exits")
+
+        menubar.addEventListener("click", function () {
+            popup.classList.remove("hidden")
+        })
+        exits.addEventListener("click", function () {
+            popup.classList.add("hidden")
+        })
+
+    </script>
+
+
+</body>
+
+</html>
