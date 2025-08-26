@@ -1,1 +1,5 @@
-# nostra-project
+🚀 I’m thrilled to launch my new personal project – Nostra, a frontend-only e-commerce fashion replica website built using HTML, CSS, and Tailwind CSS. Nostra is designed to give a complete online shopping experience with a multi-page structure including a stylish Home page and a functional Contact page. The Home page features a responsive navigation bar, an interactive popup menu for mobile users, a dynamic image slider with bold headlines, brand showcase logos, customer experience highlights, new arrivals, most-wanted collections with sale labels, an exclusive limited offer banner, and a newsletter subscription section. The Contact page includes a fully designed contact form with fields for name, email, phone number, and message, styled with modern Tailwind utilities for accessibility and responsiveness. A clean, reusable footer with social media icons ties everything together. 🌟
+
+This project helped me enhance my skills in responsive design, UI structuring, Tailwind integration, and reusable layouts, while also practicing custom CSS styling for better positioning and layout control. It’s a solid step toward building real-world e-commerce frontends and strengthening my frontend development journey.
+
+🔗 Live Demo: https://vicky-melwin.github.io/nostra-project/
