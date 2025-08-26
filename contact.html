@@ -15,11 +15,16 @@
     <nav class="p-5 flex items-center justify-between">
         <h1 class="text-4xl font-bold cursor-default">Nostra</h1>
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="menubar size-6 w-7 md:hidden" cursor: pointer;>
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
                 id="menubar" />
+        </svg> -->
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="size-6 h-7 md:hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
+
 
         <ul class="gap-16 mr-8 md:flex md:gap-10 cursor-pointer hidden" id="menuitems">
 
@@ -30,6 +35,21 @@
             <a href="contact.html" class="hover:underline">Contact Us</a>
         </ul>
     </nav>
+
+    <!-- Side Navbar  -->
+    <section id="sidenav" class="bg-white fixed z-10 top-0 right-0 trainsition-all duration-1000"
+        style="width:50%; height: 100vh; right: -50%;">
+        <div class="text-right p-5">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="text-gray-600 flex flex-col gap-10 items-center">
+            <a href="./index.html" class="hover:underline hover:text-black">Home</a>
+            <a href="./index.html" class="hover:underline hover:text-black">New Arrival</a>
+            <a href="./index.html" class="hover:underline hover:text-black">Most Wanted</a>
+            <a href="./index.html" class="hover:underline hover:text-black">Collections</a>
+            <a href="./contact.html" class="hover:underline hover:text-black">Contact Us</a>
+        </ul>
+    </section>
 
     <!-- Contact Form  -->
     <div class="isolate bg-gray-800 px-6 py-24 sm:py-32 lg:px-8">
@@ -143,6 +163,9 @@
             <h1 class="text-4xl text-white ml-10 mt-10">@2023 Nostra.com</h1>
 
     </div>
+
+    <!-- JavaScript -->
+    <script src="contact.js"></script>
 </body>
 
 </html>

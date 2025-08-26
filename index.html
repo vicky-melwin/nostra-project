@@ -20,23 +20,43 @@
     <nav class="p-5 flex items-center justify-between">
         <h1 class="text-4xl font-bold cursor-default">Nostra</h1>
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="menubar size-6 w-7 md:hidden" cursor: pointer; id="menubar">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
                 id="menubar" />
+        </svg> -->
+
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="size-6 h-7 md:hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
 
         <ul class="gap-16 mr-8 md:flex md:gap-10 cursor-pointer hidden" id="menuitems">
 
             <a href="index.html" class="hover:underline">Home</a>
-            <a href="index.html" class="hover:underline">New Arrival</a>
+            <a href="index.html" class="hover:underline" id="newarrivals">New Arrival</a>
             <a href="index.html" class="hover:underline">Most Wanted</a>
             <a href="index.html" class="hover:underline">Collections</a>
             <a href="contact.html" class="hover:underline">Contact Us</a>
         </ul>
     </nav>
 
-    <!-- Popup  -->
+    <!-- Side Navbar  -->
+    <section id="sidenav" class="bg-white fixed z-10 top-0 right-0 trainsition-all duration-1000"
+        style="width:50%; height: 100vh; right: -50%;">
+        <div class="text-right p-5">
+            <p id="closenav" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="text-gray-600 flex flex-col gap-10 items-center">
+            <a href="./index.html" class="hover:underline hover:text-black">Home</a>
+            <a href="./index.html" class="hover:underline hover:text-black" id="newarrivals">New Arrival</a>
+            <a href="./index.html" class="hover:underline hover:text-black">Most Wanted</a>
+            <a href="./index.html" class="hover:underline hover:text-black">Collections</a>
+            <a href="./contact.html" class="hover:underline hover:text-black">Contact Us</a>
+        </ul>
+    </section>
+
+    <!-- Popup 
     <div class="hidden md:hidden" id="popup">
         <p class="exit text-2xl mt-3 cursor-default" id="exits">X</p>
         <ul class="gap-16 mr-8 sm:block md:block md:gap-10 cursor-default" id="links">
@@ -46,13 +66,14 @@
             <a href="index.html" style="font-size: 20px; margin-left: -50%"><b>Collections</b></a> <br>
             <a href="contact.html" style="font-size: 20px; margin-left: -50%"><b>Contact Us</b></a> <br>
         </ul>
-    </div>
+    </div> -->
 
     <!-- Slider images  -->
     <div class="container__1 cursor-default">
         <div class="container__1__items flex">
             <img src="./images/slider-one.jpg" alt="Not found" class="p-4 relative">
-            <h1 class="absolute text-8xl font-bold font-bold text-white flex justify-center hidden md:flex">Level up your style with our</h1>
+            <h1 class="absolute text-8xl font-bold font-bold text-white flex justify-center hidden md:flex">Level up
+                your style with our</h1>
             <p class="absolute text-2xl font-bold text-white hidden md:flex">Summer Collections</p>
             <button class="absolute border bg-white rounded-2xl hidden md:flex">Shop Now</button>
         </div>
@@ -138,7 +159,7 @@
     </div>
 
     <!-- New Arrivals  -->
-    <h1 class="text-4xl font-bold p-5 mt-10 cursor-default">New Arrival</h1>
+    <h1 class="text-4xl font-bold p-5 mt-10 cursor-default" id="newarrivalplace">New Arrival</h1>
     <div class="container__4 p-5 cursor-pointer">
         <div class="container__4__images flex">
             <div class="container__4__items relative">
@@ -225,7 +246,7 @@
 
     </div>
 
-    <!-- JAVASCRIPT  -->
+    <!-- JAVASCRIPT 
     <script>
         var menubar = document.getElementById("menubar")
         var menuitems = document.getElementById("menuitems")
@@ -239,7 +260,8 @@
             popup.classList.add("hidden")
         })
 
-    </script>
+    </script> -->
+    <script src="index.js"></script>
 
 
 </body>
